@@ -2,12 +2,23 @@ import java.util.Vector;
 
 public class Produs {
 
-  public Integer Pret ;
+  private Integer Pret ;
+  private String Nume;
 
-  public String Nume;
 
-    public Vector  myBazaDeDate;
-    public Vector  myUser;
-    public Vector  myCos;
+  public void constructor() {
+  }
+
+  public void setPret(Integer pret) {
+  }
+
+  public void getPret(Integer pret) {
+  }
+
+  public void getName(String name) {
+  }
+
+  public void setName(String name) {
+  }
 
 }

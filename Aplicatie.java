@@ -2,30 +2,36 @@ import java.util.Vector;
 
 public class Aplicatie {
 
-  private static Aplicatie instance;
+  public Aplicatie instance;
 
-  private Vector  myBazaDeDate;
-  private Vector  myUser;
+  public Vector  myBazaDeDate;
+  public Vector  myUser;
 
-  public void getIstance () {
+  public Aplicatie getIstance () {
+    if (instance == null) {
+      instance = new Aplicatie();
+    }
+    return instance;
   }
 
-  public void AdaugaUser(User user) {
+  public void AdaugaUser(User user, BazaDeDate bd) {
   }
 
-  public void LogIn() {
+  public void LogIn(User user, BazaDeDate bd) {
   }
 
-  public void ScoateDinBaza() {
+  public void EliminaProdus(Produs produs, BazaDeDate bd) {
   }
 
-  public void Search(Produs produs) {
+  public Produs Search(String numeProdus, BazaDeDate bd) {
+    return new Produs();
   }
 
-  public void AdaugaProdus(Produs produs) {
+  public void AdaugaProdus(Produs produs, BazaDeDate bd) {
   }
 
-  public void newOperation() {
+  public void scoateUser(User User, BazaDeDate bd) {
   }
+
 
 }

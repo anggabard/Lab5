@@ -2,30 +2,47 @@ import java.util.Vector;
 
 public class User {
 
-  public String Email;
+  private String Email;
+  private String Parola;
+  private Cos cos;
 
-  public String Parola;
+  public User(String email, String parola) {
+    this.Email = email;
+    this.Parola = parola;
+    this.cos = new Cos();
+  }
 
-  public Cos UnCos;
+  public String getEmail() {
+    return Email;
+  }
 
-    public Vector  myBazaDeDate;
-    public Vector  myAplicatie;
-      /**
-   * 
-   * @element-type Produs
-   */
-      public Vector  myCos;
+  public void setEmail(String email) {
+    Email = email;
+  }
+
+  public String getParola() {
+    return Parola;
+  }
+
+  public void setParola(String parola) {
+    Parola = parola;
+  }
+
+  public Cos getCos() {
+    return cos;
+  }
+
+  public void setCos(Cos cos) {
+    this.cos = cos;
+  }
 
   public void AdaugaProdus(Cos Cos, Produs Produs) {
   }
 
-  public void ScoateProdus(Produs Produs) {
+  public void ScoateProdus(Cos cos, Produs Produs) {
   }
 
   public void Plateste(Cos Cos) {
-  }
-
-  public void CreeazaCos(Cos cos) {
   }
 
 }
